@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      
+    }
+
+    #display {
+      width: 240px;
+      font-size: 24px;
+      padding: 10px;
+      text-align: left;
+      border: 15px solid black;
+      border-radius: 5px;
+      background-color: rgb(142, 139, 139);
+    }
+
+    #buttons {
+      display: grid;
+      width: 290px;
+      grid-template-columns: repeat(4, 60px);
+      gap: 10px;
+      justify-content: center;
+      background-color: rgb(11, 11, 11);
+      margin-left: 190px;
+      border-radius: 5px;
+      
+      
+    }
+
+    .btn {
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    .btn:active {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h2>Calculator</h2>
+  <input type="text" id="display" readonly />
+  <div id="buttons"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
